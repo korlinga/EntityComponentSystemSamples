@@ -36,6 +36,10 @@ namespace Miscellaneous.AnimationWithGameObjects
             UnityEngine.Object.DestroyImmediate(Instance);
         }
     }
+    public class TransformGOInstance : IComponentData 
+    {
+        public Transform Transform;
+    }
 
     public struct WanderState : IComponentData
     {
